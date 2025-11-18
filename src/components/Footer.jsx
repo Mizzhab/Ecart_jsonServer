@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
-    <div className='p-10 bg-violet-900 md: px-20 grid grid-cols-[2fr_1fr_1fr_2fr] text-white'>
-        <div>
+    <div className='p-10 bg-violet-900 md:px-20 md:grid grid-cols-[2fr_1fr_1fr_2fr] text-white'>
+        <div className='mb-5 md:mb-0'>
           <h3 className="text-2xl"><FontAwesomeIcon icon={faCartShopping}/>E-CART</h3>
           <p className="mt-4 text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam repellat alias incidunt repudiandae ipsa magnam accusamus ab. Eius cum labore aliquid nihil, et vitae sed saepe quos! Nihil, sunt quis!</p>
         </div>
-        <div className='flex justify-center'>
+        <div className='md:flex justify-center mb-5 md:mb-0'>
           <div>
             <h3 className='text-2xl'>Links</h3>
             <Link to={'/'}><p>Home</p></Link>
@@ -19,7 +19,7 @@ function Footer() {
             <Link to={'/cart'}><p>Cart</p></Link>
           </div>
         </div>
-        <div className="flex justify-center">
+        <div className="md:flex justify-center mb-5 md:mb-0">
           <div>
             <h3 className='text-2xl'>Guides</h3>
             <p>React</p>
